@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 3001;
+const port = 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -34,10 +34,10 @@ function calculateResult(buffer) {
   return result;
 }
 
-app.post("/", (req, res) => {
+app.post("/back", (req, res) => {
   res.json(calculateResult(req.body));
 });
 
 app.listen(port, () => {
-  console.log("Ready for do big dids");
+  console.log("Ready to do big dids");
 });
