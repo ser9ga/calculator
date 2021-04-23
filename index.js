@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 5000;
+const port = 80;
 
 app.use(cors());
 app.use(express.json());
@@ -36,6 +36,9 @@ function calculateResult(buffer) {
 
 app.post("/back", (req, res) => {
   res.json(calculateResult(req.body));
+});
+app.get("/", (req, res) => {
+  res.send("<H1>You are on my site, MOTHERFUCKER!</H1>");
 });
 
 app.listen(port, () => {
