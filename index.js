@@ -1,9 +1,9 @@
 const express = require("express");
+const config = require("config")
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 const app = express();
-const port = 80;
 
 app.use(cors());
 app.use(express.json());
@@ -40,12 +40,14 @@ app.post("/back", (req, res) => {
   res.json(calculateResult(req.body));
 });
 
-app.use("/",  express.static(path.join(__dirname, "client")));
+app.use("/",  express.static(path.join(__dirname, "client/build")));
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "client", "index.html"));
 // });
 
-app.listen(port, () => {
-  console.log("Ready to do big dids");
+const PORT = config.get('port') || 5000
+
+app.listen(PORT, () => {
+  console.log(`Ready to do big dids on port ${PORT}`);
 });
