@@ -1,4 +1,4 @@
 {
     "port": 5000,
-    "back-adress": "http://localhost:5000/back"
+    "back": "http://localhost:5000/back"
 }

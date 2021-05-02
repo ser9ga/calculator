@@ -4,7 +4,7 @@ import Table from "./Table";
 function CalcProcessing() {
   let [fetchResult, setFetchResult] = React.useState([]);
   const tryFetch = function () {
-    fetch(process.env.REACT_APP_URL, {
+    fetch(process.env.REACT_APP_BACK_URL, {
       method: "POST",
       body: JSON.stringify(buffer),
       headers: { "Content-Type": "application/json" },

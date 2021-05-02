@@ -35,7 +35,7 @@ function calculateResult(buffer) {
   }
   return result;
 }
-
+// const back = config.get('back') || 5000
 app.post("/back", (req, res) => {
   res.json(calculateResult(req.body));
 });
@@ -47,7 +47,6 @@ app.use("/",  express.static(path.join(__dirname, "client/build")));
 // });
 
 const PORT = config.get('port') || 5000
-
 app.listen(PORT, () => {
   console.log(`Ready to do big dids on port ${PORT}`);
 });
