@@ -196,7 +196,7 @@ function CalcProcessing() {
 
   return (
     <div>
-      <h1>ENGLISH, MOTHERFUCKER!!</h1>
+      <h1>ENGLISH, MOTHERFUCKER!</h1>
       {/* <CalculateResult /> */}
       <h1>Result: {fetchResult}</h1>
       <BufferOperation />
