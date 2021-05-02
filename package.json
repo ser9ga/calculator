@@ -10,7 +10,8 @@
     "dev": "cross-env NODE_ENV=development REACT_APP_BACK_URL=http://localhost:5000/back concurrently \"npm run server\" \"npm run client\"",
     "client:i": "npm install --prefix client",
     "client:b:d": "cross-env REACT_APP_BACK_URL=http://localhost:5000/back npm run build --prefix client",
-    "client:b:p": "cross-env REACT_APP_BACK_URL=http://ser9.ga/back npm run build --prefix client"
+    "client:b:p": "cross-env REACT_APP_BACK_URL=http://ser9.ga/back npm run build --prefix client",
+    "git:u": "bash git_upload_script.sh"
   },
   "author": "",
   "license": "ISC",
