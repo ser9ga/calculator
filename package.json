@@ -12,7 +12,7 @@
     "client:b:d": "cross-env REACT_APP_BACK_URL=http://localhost:5000/back npm run build --prefix client",
     "client:b:p": "cross-env REACT_APP_BACK_URL=http://ser9.ga/back npm run build --prefix client",
     "git:u": "bash git_upload_script.sh",
-    "git:d": "bash git_after_deploy_script.sh"
+    "git:d": "bash git_delivery_n_deploy_script.sh"
 
 
   },
