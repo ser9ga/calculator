@@ -19,7 +19,7 @@ jobs:
       #   with:
       #     node-version: ${{ matrix.node-version }}
       - run: pm2 delete npm
-      - run: git pull
-      - run: npm run client:i
-      - run: npm run client:b:p
-      - run: pm2 start npm -- start
+      # - run: git pull
+      # - run: npm run client:i
+      # - run: npm run client:b:p
+      # - run: pm2 start npm -- start
