@@ -18,7 +18,9 @@ jobs:
       #   uses: actions/setup-node@v2
       #   with:
       #     node-version: ${{ matrix.node-version }}
-      - run: pm2 delete npm --if-present
+
+      
+      # - run: pm2 delete npm --if-present
       - run: git pull
       - run: npm run client:i
       - run: npm run client:b:p
