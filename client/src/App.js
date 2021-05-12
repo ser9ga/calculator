@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <div className="header">
-        <img src={samuel} />
+        <img src={samuel} alt={samuel} />
       </div>
       <div className="wrapper">
         {/* <LoginModule /> */}
