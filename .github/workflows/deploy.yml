@@ -22,4 +22,5 @@ jobs:
       # - run: git pull
       # - run: npm run client:i
       # - run: npm run client:b:p
-      - run: pm2 start npm -- start
+      # - run: pm2 start npm -- start
+      - run: bash git_delivery_n_deploy_script.sh 
