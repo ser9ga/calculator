@@ -21,6 +21,7 @@ jobs:
 
 
       # - run: pm2 delete npm --if-present
+      - run: git stash
       - run: git pull
       - run: npm ci
       - run: npm run client:i
